@@ -1,2 +1,4 @@
 .idea
 .vscode
+charts/kafka/charts
+charts/kafka/Charts.lock
