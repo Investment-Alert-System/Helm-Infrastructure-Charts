@@ -1,0 +1,7 @@
+apiVersion: v2
+dependencies:
+  - name: kafka
+    repository: https://charts.bitnami.com/bitnami
+    version: 22.1.5
+name: kafka-server
+version: 22.1.6

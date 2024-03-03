@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: finance-kafka-topic-creator
+spec:
+  template:
+    spec:
+      containers:
+      - name: kafka-topic-creator
+        image: confluentinc/cp-kafka:latest
+        command: ["kafka-topics", "--create", "--bootstrap-server", "kafka:9092", "--replication-factor", "1", "--partitions", "1", "--topic", "raw_stock_data"]
+      restartPolicy: Never
