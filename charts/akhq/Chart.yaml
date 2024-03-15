@@ -1,0 +1,8 @@
+apiVersion: v2
+name: akhq
+description: A Helm Chart for AKHQ for kafka
+version: 0.1.0
+dependencies:
+  - name: akhq
+    version: "0.2.2"
+    repository: "https://akhq.io/"
