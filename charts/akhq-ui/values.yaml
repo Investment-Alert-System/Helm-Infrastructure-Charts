@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: tchiotludo/akhq
+  tag: 0.20.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: localhost
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []

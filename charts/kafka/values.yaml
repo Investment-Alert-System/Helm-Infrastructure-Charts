@@ -1,2 +1,11 @@
 kafka:
-  replicaCount: 1
+  replicaCount: 3
+  metrics:
+    serviceMonitor:
+      enabled: true
+    prometheusRule:
+      enabled: true
+    kafka:
+      enabled: true
+  persistence:
+    size: 20G
