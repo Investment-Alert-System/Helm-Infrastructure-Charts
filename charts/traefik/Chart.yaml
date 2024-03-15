@@ -1,0 +1,4 @@
+apiVersion: v2
+name: traefik
+description: A Helm Chart for Traefik in Kubernetes.
+version: 0.1.0
