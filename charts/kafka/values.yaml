@@ -1,20 +1,2 @@
-zookeeper:
-  image: confluentinc/cp-zookeeper
-  clientPort: 2181
-
 kafka:
-  image: confluentinc/cp-kafka
-  zookeeperConnect: "zookeeper:2181"
-  advertisedListeners: "INTERNAL://kafka:29092,EXTERNAL://localhost:9092"
-  interBrokerListenerName: "INTERNAL"
-  offsetsTopicReplicationFactor: "1"
-  allowPlaintextListener: "true"
-
-schemaRegistry:
-  image: confluentinc/cp-schema-registry
-  hostName: "schema-registry"
-  listeners: "http://0.0.0.0:8085"
-
-akhq:
-  image: tchiotludo/akhq
-  port: 8080
+  replicaCount: 1

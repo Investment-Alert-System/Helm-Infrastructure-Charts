@@ -1,4 +1,8 @@
 apiVersion: v2
-name: kafka-helm
-description: A Helm chart for Kafka and associated components
+name: kafka
+description: Chart for kafka server
 version: 0.1.0
+dependencies:
+  - name: kafka
+    version: "22.1.5"
+    repository: "https://charts.bitnami.com/bitnami"
